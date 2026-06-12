@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Babe 🎂❤️</title>
+  <link rel="stylesheet" href="ch.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== INTRO SCREEN ===== -->
+  <div class="intro-screen" id="intro-screen">
+    <canvas id="intro-canvas"></canvas>
+    <div class="intro-content" id="intro-content">
+      <div class="intro-hearts-row" id="intro-hearts-row">
+        <span>❤️</span><span>🥹</span><span>💕</span><span>🫶🏻</span><span>❤️</span>
+      </div>
+      <div class="intro-title-wrap">
+        <p class="intro-for">this is for you...</p>
+        <h1 class="intro-name" id="intro-name"></h1>
+      </div>
+      <div class="intro-subtitle" id="intro-subtitle">
+        <span>Happy Birthday</span>
+        <span class="intro-babe"> Babe 🥺❤️</span>
+      </div>
+      <div class="intro-loader" id="intro-loader">
+        <div class="loader-bar"><div class="loader-fill" id="loader-fill"></div></div>
+        <p class="loader-text" id="loader-text">Loading your special gift...</p>
+      </div>
+      <button class="intro-skip" id="intro-skip" onclick="skipIntro()">Skip →</button>
+    </div>
+  </div>
+
+  <!-- Floating Hearts Background -->
+  <div class="hearts-bg" id="hearts-bg"></div>
+
+  <!-- ===== MAIN CONTENT (hidden until intro done) ===== -->
+  <div id="main-content" class="main-hidden">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="cake-emoji">🎂</div>
+        <h1 class="hero-title">Happy Birthday</h1>
+        <p class="hero-subtitle">Babe 🥺❤️</p>
+        <p class="hero-tagline">Today is all about you ✨</p>
+        <div class="scroll-hint">
+          <span>Scroll down for something special</span>
+          <div class="arrow-down">↓</div>
+        </div>
+      </div>
+      <div class="hero-glow"></div>
+    </section>
+
+    <!-- ===== WISH 1 ===== -->
+    <section class="wish-section wish-1" id="wish1">
+      <div class="wish-card">
+        <div class="wish-icon">🥺❤️</div>
+        <div class="wish-text">
+          <p>Happy birthday Babe 🥺❤️🙁</p>
+          <p>I don't know where to start but I have lot to say to you 😞</p>
+          <p>Today is your birthday and is the best day for u to relax and enjoy the best things in ur life 🥺🫶🏻</p>
+          <p>This day I wanna thank you for being in my life 🥺❤️‍🩹</p>
+          <p>Thanks for ur love and support 🫂</p>
+          <p>Thanks for accept all my shortcomings 🥺❤️‍🩹</p>
+          <p>And have always been able to make peace with my dark past 🥹🫶🏻</p>
+          <p>I've always waited for this day because I want to make u feel special and try to make you more happiest</p>
+          <p>You're the best I've in my life ☺️❤️</p>
+          <br/>
+          <p>All the time fighting with u and feeling nothing without you 🥺😞</p>
+          <p>You are someone I can blindly Count on always till my last breath 🥹</p>
+          <br/>
+          <p>I wish nothing but happiness, peace, prosperity and love over your life 🤍🫶🏻</p>
+          <br/>
+          <p class="sinhala-line">Mge sini pulun kalla adarei godk 😫🥹</p>
+          <br/>
+          <p class="sign-off">Your headache 🥺❤️‍🩹</p>
+          <p class="sign-off">God bless u bba 🤍🫂</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PHOTOS SECTION ===== -->
+    <section class="photos-section" id="photos">
+      <h2 class="section-title">Our Memories 📸</h2>
+      <p class="section-sub">Every photo holds a piece of my heart 🥹</p>
+
+      <div class="photo-grid">
+        <div class="photo-item" onclick="openLightbox(this)">
+          <img src="New%20folder/1391d51e-bcd8-4bac-aab1-6277df870280.jpg" alt="Memory 1" loading="lazy" />
+          <div class="photo-overlay"><span>❤️</span></div>
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)">
+          <img src="New%20folder/33620a0b-75e2-4d74-bc5b-15b565c4022e.jpg" alt="Memory 2" loading="lazy" />
+          <div class="photo-overlay"><span>🥹</span></div>
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)">
+          <img src="New%20folder/5f3e855f-3d62-44db-9fc7-04a1db92cbe5.jpg" alt="Memory 3" loading="lazy" />
+          <div class="photo-overlay"><span>🫶🏻</span></div>
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)">
+          <img src="New%20folder/6a7b6927-4fa9-4a58-82a2-1f46b924591a.jpg" alt="Memory 4" loading="lazy" />
+          <div class="photo-overlay"><span>☺️</span></div>
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)">
+          <img src="New%20folder/WhatsApp%20Image%202026-06-12%20at%2009.21.23.jpeg" alt="Memory 5" loading="lazy" />
+          <div class="photo-overlay"><span>❤️‍🩹</span></div>
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)">
+          <img src="New%20folder/WhatsApp%20Image%202026-06-12%20at%2009.21.33.jpeg" alt="Memory 6" loading="lazy" />
+          <div class="photo-overlay"><span>🥰</span></div>
+        </div>
+        <div class="photo-item photo-wide" onclick="openLightbox(this)">
+          <img src="New%20folder/WhatsApp%20Image%202026-06-12%20at%2009.22.40.jpeg" alt="Memory 7" loading="lazy" />
+          <div class="photo-overlay"><span>💕</span></div>
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)">
+          <img src="New%20folder/c762e64d-8540-4efa-bdd6-5e9ede339d51.jpg" alt="Memory 8" loading="lazy" />
+          <div class="photo-overlay"><span>🤍</span></div>
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)">
+          <img src="New%20folder/e1be65c6-64e3-47d4-8940-1f43443ab7fa.jpg" alt="Memory 9" loading="lazy" />
+          <div class="photo-overlay"><span>🫂</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VIDEOS SECTION ===== -->
+    <section class="videos-section" id="videos">
+      <h2 class="section-title">Special Moments 🎬</h2>
+      <p class="section-sub">Some memories are meant to be seen 🥹🫶🏻</p>
+
+      <div class="video-grid">
+        <div class="video-item">
+          <video id="vid1" controls preload="metadata">
+            <source src="New%20folder/video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">💕 Special Moment 1</p>
+        </div>
+        <div class="video-item">
+          <video id="vid2" controls preload="metadata">
+            <source src="New%20folder/video2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">🥹 Special Moment 2</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WISH 2 ===== -->
+    <section class="wish-section wish-2" id="wish2">
+      <div class="wish-card wish-card-alt">
+        <div class="wish-icon">🎂✨</div>
+        <div class="wish-text">
+          <p class="wish-title-text">Happy Birthday Chuty mdm!</p>
+          <p>On your special day, I just want u to know how much u mean to me.</p>
+          <p>You bring light, laughter and so much love wherever u go.</p>
+          <p>May ur day be filled with all the happiness u deserve,</p>
+          <p>and may this year bring u endless success, peace and joy.</p>
+          <br/>
+          <p>Always stay amazing person you are —</p>
+          <p>the world is better with u in it. 🌟</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECRET GIFT SECTION ===== -->
+    <section class="gift-section" id="gift">
+      <div class="gift-container">
+        <h2 class="section-title">One More Thing... 🎁</h2>
+        <p class="gift-hint">Touch the gift to see what's waiting for you 👇</p>
+
+        <div class="gift-box-wrapper" id="gift-box-wrapper">
+          <div class="gift-box" id="gift-box" onclick="revealGift()">
+            <div class="gift-lid" id="gift-lid">
+              <div class="gift-bow">🎀</div>
+            </div>
+            <div class="gift-body">
+              <div class="gift-ribbon-h"></div>
+            </div>
+            <div class="gift-sparkles" id="gift-sparkles"></div>
+          </div>
+          <p class="gift-tap-text">Tap me! 🥺</p>
+        </div>
+
+        <div class="gift-reveal" id="gift-reveal">
+          <div class="gift-message">
+            <p class="gift-msg-main">Hodama gift eka hmbenn thwa tikk kal yai 😉</p>
+            <p class="gift-msg-sub">🤍🫂 Something special is on its way for you bba...</p>
+            <div class="heart-burst">❤️‍🔥</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p class="footer-heart">❤️</p>
+      <p>Made with love, just for you 🥹🫶🏻</p>
+      <p class="footer-name">Your headache 😊</p>
+    </footer>
+
+  </div><!-- end #main-content -->
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Memory" />
+  </div>
+
+  <script src="ch.js"></script>
+</body>
+</html>
